@@ -23,6 +23,15 @@
     .footer__copyright-text {
         font-size: 1.36rem;
     }
+
+    .services__link {
+        font-size: 2rem;
+    }
+
+    .video__abs {
+        width: 333px;
+        height: 250px;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -58,7 +67,7 @@
 
     .light-btn.header__ld {
         position: absolute;
-        top: 22px;
+        top: 24px;
         right: 50px;
         font-size: 1.8rem;
         line-height: 26px;
@@ -96,6 +105,14 @@
         position: static !important;
         text-align: center;
         transform: translateX(0);
+        border: 1px solid var(--border-color-light);
+        border-radius: 4px;
+    }
+
+    .header__drop::before {
+        border: 1px solid var(--border-color-light);
+        border-right: none;
+        border-bottom: none;
     }
 
     .header__navbar-form {
@@ -174,6 +191,10 @@
         height: 34px;
         width: 34px;
     }
+
+    .services {
+        padding-bottom: 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -187,8 +208,12 @@
     }
 }
 
+@media only screen and (max-width: 769px) {
+    
+}
+
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .carousel__content-title {
         font-size: 4.5rem;
     }
@@ -227,7 +252,7 @@
     }
 
     .footer__form {
-        margin: 0 1.6rem;
+        margin: 0 3rem;
     }
 
     .content__desc {
@@ -285,11 +310,11 @@
     }
 
     .content__heading::after {
-        right: 35%;
+        right: 39%;
     }
 
     .content__heading {
-        font-size: 3.5rem;
+        font-size: 3.9rem;
     }
 
     .contactus__title {
@@ -299,11 +324,38 @@
     .footer__form-title {
         font-size: 3rem;
     }
+
+    .services__link {
+        font-size: 2.5rem;
+    }
+
+    .footer__form {
+        margin: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content__heading {
+        font-size: 3.5rem;
+    }
+
+    .content__heading::after {
+        right: 36%;
+    }
+
+    .footer__form-btn {
+        padding: 16px 28px;
+    }
+
+    .my__mt-120 {
+        margin-top: 180px;
+    }
 }
 
 @media (max-width: 440px) {
     .footer__form {
         z-index: 1;
+        padding: 49px 30px;
     }
 
     .my__mt-120 {
@@ -329,7 +381,7 @@
         font-size: 1.4rem;
         border-radius: 4px;
     }
-
+    .footer__form
     .my__btn {
         /* width: 100%;
         text-align: center; */
@@ -356,6 +408,16 @@
     }
 
     .services__link {
-        font-size: 1.8rem;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 375px) {
+    .content__heading {
+        font-size: 2.9rem;
+    }
+
+    .content__heading::after {
+        right: 30%;
     }
 }

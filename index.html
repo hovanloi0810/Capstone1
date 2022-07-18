@@ -41,6 +41,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- css.gg -->
+    <link href="https://css.gg/css" rel="stylesheet" />
+
+    <!-- UNPKG -->
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
+
+    <!-- JSDelivr -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -131,8 +142,10 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                id="btn-icon"
               >
-              <i class="fa-solid fa-sliders header__navbar-togglericon"></i>
+                <!-- <i class="fa-solid fa-rectangle-xmark"></i> -->
+                <i id="icon-respon" class="fa-solid fa-bars header__navbar-togglericon"></i>
                 <!-- <span class="navbar-toggler-icon"></span> -->
               </button>
 
@@ -235,10 +248,9 @@
                   <div class="theme-switch-wrapper">
                     <label class="theme-switch" for="checkbox">
                       <input type="checkbox" id="checkbox" />
-                      <div class="mode-container">
-                        <!-- <i class="fa-solid fa-sun header__ld-icon"></i> -->
+                      <div class="mode-container moon-sun-wrap">  
                         <i
-                          class="fa-solid fa-moon header__ld-icon"
+                          class="gg-moon header__ld-icon"
                           onclick="changeIcon()"
                           id="myBtn"
                         ></i>
@@ -1139,7 +1151,7 @@
         <section class="number second-py-48">
           <div class="container my-py-48 my-py-48-2-rps">
             <div class="content__title text-center">
-              <h3 class="mx-auto content__heading content__heading--pb">
+              <h3 class="mx-auto content__heading content__heading--pb mb-48-us">
                 Strength in
                 <span class="content__span">Numbers</span>
               </h3>
@@ -1641,15 +1653,14 @@
                       </a>
                     </li>
                     <li class="footer__list-item">
-                      <a
-                        href=""
-                        class="footer__list-itemlink footer__contact-link"
+                      <p
+                        class="footer__contact-link"
                       >
                         <i
                           class="fa-solid fa-location-dot footer__contact-icon"
                         ></i>
                         London, 235 Terry, 10001
-                      </a>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -1721,6 +1732,11 @@
               >
             </p>
           </div>
+        </div>
+
+        <!-- video -->
+        <div class="wrap__video">
+          <iframe class="video__abs" src="https://www.youtube.com/embed/G-y4WhkkkKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </footer>
       <!-- End: footer -->
